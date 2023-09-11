@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "segoui";
+    src: url(../font/SEGOEUI.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "segoui", serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.541);
+    box-shadow: 0px 10px 8px 2px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 0px 10px 8px 2px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 10px 8px 2px rgba(0,0,0,0.57);
+    height: 3rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    display: none;
+}
+
+#img_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/architect.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 56vh;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+#img_header h1 {
+    color: white;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    padding: 1rem 2rem;
+}
+
+#logo {
+    padding: 1rem 1rem 1rem 2rem;
+    letter-spacing: 0.4rem;
+    font-weight: 500;
+}
+
+li {
+    padding: 1rem 2rem 1rem 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+span {
+    font-weight: 800;
+}
+
+.br {
+    background-color: rgba(0, 0, 0, 0.733);
+    letter-spacing: 1rem;
+    padding: 1rem 2rem;
+}
+
+.archi {
+    display: none;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projects h2 {
+    width: 80%;
+    margin: auto;
+}
+
+.house {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.house div {
+    margin: 1rem auto;
+}
+
+.house h3 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background-color: black;
+    font-size: 150%;
+    margin-top: 1rem;
+    padding: 1.5rem 3rem;
+    letter-spacing: 0.4rem;
+}
