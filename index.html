@@ -12,6 +12,7 @@
         <nav>
             <div id="logo"><span>BR</span> Architects</div>
             <input type="checkbox" id="check">
+            <!-- Le label va être lié à une div qui aura l'id désigné par l'attribut for -->
             <label id="burger" for="check">
                 <i class="fa-solid fa-bars ma-bars"></i>
             </label>
@@ -28,89 +29,120 @@
     <main>
         <section id="projects">
             <h2>Projects</h2>
-            <div class="house">
-                <h3>Summer House</h3>
-                <div>
-                    <img src="./assets/img/house5.jpg" alt="house">
+            <article id="gallery">
+                <div class="house">
+                    <h3>Summer House</h3>
+                    <div>
+                        <img src="./assets/img/house5.jpg" alt="house">
+                    </div>
                 </div>
-            </div>
-            <div class="house">
-                <h3>Brick House</h3>
-                <div>
-                    <img src="./assets/img/house2.jpg" alt="house">
+                <div class="house">
+                    <h3>Brick House</h3>
+                    <div>
+                        <img src="./assets/img/house2.jpg" alt="house">
+                    </div>
                 </div>
-            </div>
-            <div class="house">
-                <h3>Renovated</h3>
-                <div>
-                    <img src="./assets/img/house3.jpg" alt="house">
+                <div class="house">
+                    <h3>Renovated</h3>
+                    <div>
+                        <img src="./assets/img/house3.jpg" alt="house">
+                    </div>
                 </div>
-            </div>
-            <div class="house">
-                <h3>Barn House</h3>
-                <div>
-                    <img src="./assets/img/house4.jpg" alt="house">
+                <div class="house">
+                    <h3>Barn House</h3>
+                    <div>
+                        <img src="./assets/img/house4.jpg" alt="house">
+                    </div>
                 </div>
-            </div>
-            <div class="house">
-                <h3>Summer House</h3>
-                <div>
-                    <img src="./assets/img/house2.jpg" alt="house">
+                <div class="house">
+                    <h3>Summer House</h3>
+                    <div>
+                        <img src="./assets/img/house2.jpg" alt="house">
+                    </div>
                 </div>
-            </div>
-            <div class="house">
-                <h3>Brick House</h3>
-                <div>
-                    <img src="./assets/img/house5.jpg" alt="house">
+                <div class="house">
+                    <h3>Brick House</h3>
+                    <div>
+                        <img src="./assets/img/house5.jpg" alt="house">
+                    </div>
                 </div>
-            </div>
-            <div class="house">
-                <h3>Renovated</h3>
-                <div>
-                    <img src="./assets/img/house4.jpg" alt="house">
+                <div class="house">
+                    <h3>Renovated</h3>
+                    <div>
+                        <img src="./assets/img/house4.jpg" alt="house">
+                    </div>
                 </div>
-            </div>
-            <div class="house">
-                <h3>Barn House</h3>
-                <div>
-                    <img src="./assets/img/house3.jpg" alt="house">
+                <div class="house">
+                    <h3>Barn House</h3>
+                    <div>
+                        <img src="./assets/img/house3.jpg" alt="house">
+                    </div>
                 </div>
-            </div>
+            </article>
         </section>
-        <section id="About">
+        <section id="about">
             <h2>About</h2>
             <p id="txt_about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="picture">
-                <img src="./assets/img/team2.jpg" alt="John">
+            <article id="people">
+            <div class="card">
+                <div class="picture">
+                    <img src="./assets/img/team2.jpg" alt="John">
+                </div>
+                <h3>John Doe</h3>
+                <h4>CEO & Founder</h4>
+                <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
             </div>
-            <h3>John Doe</h3>
-            <h4>CEO & Founder</h4>
-            <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <input type="button" value="Contact">
-            <div class="picture">
-                <img src="./assets/img/team1.jpg" alt="Jane">
+            <div class="card">
+                <div class="picture">
+                    <img src="./assets/img/team1.jpg" alt="Jane">
+                </div>
+                <h3>Jane Doe</h3>
+                <h4>Architect</h4>
+                <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
             </div>
-            <h3>Jane Doe</h3>
-            <h4>Architect</h4>
-            <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <input type="text" value="Contact">
-            <div class="picture">
-                <img src="./assets/img/team3.jpg" alt="Mike">
+            <div class="card">
+                <div class="picture">
+                    <img src="./assets/img/team3.jpg" alt="Mike">
+                </div>
+                <h3>Mike Ross</h3>
+                <h4>Architect</h4>
+                <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                </p>
+                <button>Contact</button>
             </div>
-            <h3>Mike Ross</h3>
-            <h4>Architect</h4>
-            <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-            </p>
-            <input type="text" value="Contact">
-            <div class="picture">
-                <img src="./assets/img/team4.jpg" alt="Dan">
+            <div class="card">
+                <div class="picture">
+                    <img src="./assets/img/team4.jpg" alt="Dan">
+                </div>
+                <h3>Dan Star</h3>
+                <h4>Architect</h4>
+                <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
             </div>
-            <h3>Dan Star</h3>
-            <h4>Architect</h4>
-            <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-            <input type="text" value="Contact">
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div id="formulaire">
+                <p>Lets get in touch and talk about your next project.</p>
+                <form action="">
+                    <div><input name="name" placeholder="Name" type="text"></div>
+                    <div><input type="email" name="email" placeholder="Email"></div>
+                    <div><input type="text" name="subject" placeholder="Subject"></div>
+                    <div><input type="text" name="comment" placeholder="Comment"></div>
+                    <div><input type="button" value="SEND MESSAGE" id="button"></div>
+                </form>
+                <div id="img_contact">
+                    <img src="./assets/img/map.jpg" alt="map">
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <h3>Powered by Footer</h3>
+    </footer>
     
 </body>
 </html>

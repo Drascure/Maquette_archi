@@ -21,13 +21,16 @@ nav {
     box-shadow: 0px 10px 8px 2px rgba(0,0,0,0.57);
     -webkit-box-shadow: 0px 10px 8px 2px rgba(0,0,0,0.57);
     -moz-box-shadow: 0px 10px 8px 2px rgba(0,0,0,0.57);
-    height: 3rem;
+    height: 8vh;
 }
 
-ul {
+nav ul {
     list-style-type: none;
-    display: flex;
     display: none;
+    position: absolute;
+    background-color: aliceblue;
+    top: 8vh;
+    right: 0;
 }
 
 li {
@@ -41,11 +44,13 @@ li {
     border-radius: 0.5rem;
 }
 
+/* Permet de changer l'état de mes ul en fonction de la chekbox, si elle est check ou non */
 #check:checked~ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
-nav input {
+#check {
     display: none;
 }
 
@@ -59,7 +64,7 @@ nav input {
     background-repeat: no-repeat;
     height: 56vh;
     padding: 0;
-    margin-top: 3rem;
+    margin-top: 8vh;
 }
 
 #img_header h1 {
@@ -81,7 +86,7 @@ img, input {
 }
 
 span {
-    font-weight: 800;
+    font-weight:700;
 }
 
 .br {
@@ -99,7 +104,7 @@ span {
     flex-wrap: wrap;
 }
 
-#projects h2, #about h2 {
+#projects h2, #about h2, #contact h2 {
     width: 80%;
     font-size: 3rem;
     font-weight: 50;
@@ -108,13 +113,13 @@ span {
     border-bottom: solid 0.5px rgb(223, 223, 223);
 }
 
-.house {
+#gallery, #people, #formulaire{
     position: relative;
     width: 80%;
     margin: auto;
 }
 
-.house div {
+.house div, .card div {
     margin: 1rem auto;
 }
 
@@ -124,7 +129,46 @@ span {
     color: white;
     background-color: black;
     font-size: 150%;
-    margin-top: 1rem;
-    padding: 1.5rem 3rem;
-    letter-spacing: 0.4rem;
+    padding: 1vh 3vw;
+}
+
+#txt_about {
+    width: 80%;
+    margin: auto;
+} 
+
+#people *{
+    padding: 1vh 0;
+}
+
+.card button {
+    width: 100%;
+    border: none;
+    margin-top: 1.5vh;
+}
+
+.card h4 {
+    color: rgb(160, 160, 160);
+}
+
+input {
+    margin: 1vh 0;
+    padding: 0.5rem;
+}
+
+#button {
+    width: auto;
+    color: white;
+    background-color: black;
+    margin: 8% 0;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
 }
