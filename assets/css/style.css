@@ -27,8 +27,6 @@ nav {
 nav ul {
     list-style-type: none;
     display: none;
-    position: absolute;
-    background-color: aliceblue;
     top: 8vh;
     right: 0;
 }
@@ -128,7 +126,7 @@ span {
     z-index: 1;
     color: white;
     background-color: black;
-    font-size: 150%;
+    font-size: 22px;
     padding: 1vh 3vw;
 }
 
@@ -157,7 +155,7 @@ input {
 }
 
 #button {
-    width: auto;
+    width: fit-content;
     color: white;
     background-color: black;
     margin: 8% 0;
@@ -171,4 +169,66 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: 3%;
+}
+
+@media screen and (min-width:576px) {
+
+    #gallery, #people, #formulaire{
+        position: relative;
+        width: 95%;
+        margin: auto;
+    }
+
+    #people, #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .card, .house {
+        width: 49%;
+    }
+
+    .house h3 {
+        margin: 1rem 0;
+        font-size: 100%;
+    }
+    
+
+    nav ul {
+        display: contents;
+    }
+
+
+    #burger {
+        display: none;
+    }
+
+    .archi {
+        display: contents;
+    }
+
+    .br, .archi {
+        font-size: 30%;
+        font-weight: 1000;
+        letter-spacing: 0.5;
+        padding: 0.7rem;
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+    .card, .house {
+        width: 24%;
+    }
+    
+    .house h3 {
+        font-size: 80%;
+        letter-spacing: 0.3rem;
+        padding: 1vw 1vh;
+    }
+
+    #projects h2, #about h2, #contact h2, #txt_about {
+        width: 95%;
+    }
 }
